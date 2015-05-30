@@ -3066,7 +3066,7 @@ function network_admin_url( $path = '', $scheme = 'admin' ) {
 	if ( ! is_multisite() )
 		return admin_url( $path, $scheme );
 
-	$url = network_site_url('wp-admin/network/', $scheme);
+	$url = network_site_url('wp/wp-admin/network/', $scheme);
 
 	if ( $path && is_string( $path ) )
 		$url .= ltrim($path, '/');
